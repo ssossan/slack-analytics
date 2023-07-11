@@ -5,4 +5,4 @@
 To run the converter, use the following command:
 
 ```shell
-go run converter.go DIRECTORY_NAME
+go run converter.go DIRECTORY_PATH
