@@ -200,6 +200,9 @@ func updateStats(statsByChannel StatsByChannel, channelName string, messages []M
 				reactingStats, ok := statsByUser[reactingUser]
 				if !ok {
 					u := users[reactingUser]
+					if u == nil {
+						continue
+					}
 					reactingStats = &Stats{
 						UserID:       u.ID,
 						Name:         u.Name,
